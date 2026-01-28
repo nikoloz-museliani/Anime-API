@@ -3,6 +3,10 @@
     padding: 0px;
     outline: none;
 }
+p{
+    margin: 0px;
+    padding: 0px;
+}
 .everything{
     display: flex;
     flex-direction: column;
@@ -48,7 +52,7 @@ a{
 .my-card{
     display: flex;
     transition: 0.5s;
-    width: 400px !important;
+    width: 350px !important;
     height: 300px !important;
     background-color: #161922;
     border-radius: 10px;
@@ -67,7 +71,7 @@ a{
     justify-content: start;
     align-items: center;
     padding: 0.5vw;
-    gap: 1vw;
+    gap: 0.7vw;
 }
 
 .image-wrapper {
@@ -94,7 +98,7 @@ a{
 }
 
 .img-rating{
-    max-width: 70%;
+    max-width: 50%;
     min-width: 30%;
     height: 100%;
     display: flex;
@@ -112,7 +116,7 @@ a{
 #rating{
     position: absolute;
     color: white;
-    font-size: 1vw;
+    font-size: 1em;
     bottom: 0.5vh;
     left: 0.5vw;
     margin: 0;
@@ -140,8 +144,7 @@ a{
     padding: 0.5vw;
 }
 #status{
-    font-size: 1.5vw;
-    margin: 0;
+    font-size: 1em;
 }
 .year{
     width: 100%;
@@ -149,11 +152,42 @@ a{
     justify-content: left;
     align-items: center;
     gap: 0.5vw;
-    font-size: 1.1vw;
+    font-size: 0.8em;
 }
-
-
-
+#title{
+    font-size: 1em;
+    font-weight: 500;
+}
+.score{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.rank{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(167, 167, 167);
+}
+.score-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.genres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
 .my-card:hover{
     box-shadow: -2px 4px 20px 0px black;

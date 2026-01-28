@@ -1,3 +1,92 @@
+# 🎌 Anime Explorer (Angular Project)
+
+## 📌 Project Overview
+
+Anime Explorer is a web application created for learning purposes, focusing on **Angular**, **API integration**, and **frontend architecture**.  
+The project uses an **Anime API** that provides detailed information about anime titles released from **1980 to the present**.
+
+The application allows users to browse:
+
+- 🔥 Trending anime  
+- ⭐ Popular anime  
+- 🆕 Newly released anime  
+
+Users can select an anime to view its details, with the long-term goal of enabling free streaming through available external platforms.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Angular** – frontend framework  
+- **TypeScript** – main programming language  
+- **Anime API** – external REST API for anime data  
+- **HTML5 / CSS3** – layout and styling  
+- **RxJS** – handling asynchronous data  
+- **Git & GitHub** – version control  
+
+---
+
+## ⚙️ Current Features
+
+- Fetches anime data from an external API  
+- Displays trending, popular, and new anime lists  
+- Anime selection with basic details view  
+- API integration and data handling  
+
+---
+
+## 🚧 Project Status
+
+⚠️ **This project is currently unfinished.**
+
+Planned features are partially implemented and the application still requires:
+
+- UI/UX redesign  
+- A proper detailed anime page  
+- Streaming or external watch-link integration  
+
+---
+
+## 🚀 Future Improvements
+
+- 🎨 Complete UI/UX redesign (modern layout & responsiveness)  
+- 📄 Detailed anime pages (description, genres, rating, episodes, trailer)  
+- ▶️ Ability to watch anime via embedded or linked streaming platforms  
+- 🔍 Search and filter functionality  
+- ❤️ Favorites / watchlist system  
+- 🌙 Dark mode support  
+- 📱 Mobile-first responsiveness  
+
+---
+
+## 🎯 Purpose of the Project
+
+This project was built purely for **educational purposes**, to:
+
+- Practice Angular fundamentals  
+- Learn real-world API consumption  
+- Understand component-based architecture  
+- Improve frontend development skills  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # AngularRouting3
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.

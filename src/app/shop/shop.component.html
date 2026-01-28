@@ -87,9 +87,63 @@
                 </ng-template>
 
                 <div class="title">
-                  <p id="title">{{ data.title.length > 40 ? (data.title | slice:0:40) + '...' : data.title }}</p>
-
+                  <ng-container *ngIf="data.title_english != null; else japaneseTitle">
+                    <p id="title">{{ data.title_english.length > 35 ? (data.title_english | slice:0:35) + '...' : data.title_english }}</p>
+                  </ng-container>
+                  <ng-template #japaneseTitle>
+                    <p id="title">{{ data.title.length > 35 ? (data.title | slice:0:35) + '...' : data.title}}</p>
+                  </ng-template>
                 </div>
+
+                <ng-container *ngIf="data.rank != null && data.score != null; else noScore">
+                  <div class="score-list">
+                    <div class="score">
+                      <p id="score"><i class="fa-regular fa-star"></i>{{data.score}}</p>
+                      <p id="ranking">#{{data.rank}}</p>
+                    </div>
+                    <div class="rank">
+                      <p id="members">{{data.members}} users</p>
+                      <p>ranking</p>
+                    </div>
+                  </div>
+                </ng-container>
+                <ng-template #noScore>
+                  <ng-container *ngIf="data.rank == null && data.score != null; else noRank">
+                    <div class="score-list">
+                      <div class="score">
+
+                        <p id="ranking">#{{data.rank}}</p>
+                      </div>
+                      <div class="rank">
+                        <p>ranking</p>
+                      </div>
+                    </div>
+                  </ng-container>
+                </ng-template>
+                <ng-template #noRank>
+                  <ng-container *ngIf="data.rank != null && data.score == null; else non">
+                    <div class="score-list">
+                      <div class="score">
+                        <p id="score"><i class="fa-regular fa-star"></i>{{data.score}}</p>
+                      </div>
+                      <div class="rank">
+                        <p id="members">{{data.members}} users</p>
+                      </div>
+                    </div>
+                  </ng-container>
+                </ng-template>
+                <ng-template #non>
+                  <ng-container *ngIf="data.rank == null && data.score == null;">
+                    <div class="score-list">
+
+                    </div>
+                  </ng-container>
+                </ng-template>
+
+                <div class='genres' *ngFor="let item of data.genres">
+                  <p>{{item.name}}</p>
+                </div>
+
               </div>
               
             </a>
